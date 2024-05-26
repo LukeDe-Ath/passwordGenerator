@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Generate a Password</h1>
+        <div class="result">
+            <div id="password">Placeholder</div>
+            <button id="regenerate">Re-Generate</button>
+        </div>
+        <div id="options">
+            <div class="container">
+                <h2>Options</h2>
+                <!-- Length -->
+                <div class="length">
+                    <label for="pw-length">Length:</label>
+                    <output id="length-output"></output>
+                    <input id="pw-length" name="pw-length" value="12" type="range" min="8" max="32"/>
+                </div>
+                <div class="toggles">
+                    <label for="tg-special">Special Characters</label>
+                    <input id="tg-special" name="tg-special" type="checkbox" checked/>
+                    <br>
+                    <label for="tg-number">Numbers</label>
+                    <input id="tg-number" name="tg-number" type="checkbox" checked/>
+                    <br>
+                    <label for="tg-upper">Uppercase A-Z</label>
+                    <input id="tg-upper" name="tg-upper" type="checkbox" checked/>
+                    <br>
+                    <label for="tg-lower">Lowercase a-z</label>
+                    <input id="tg-lower" name="tg-lower" type="checkbox" checked/>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
