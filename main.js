@@ -74,7 +74,6 @@ genButton.onclick = () => {
 
     const interval = setInterval(function() {
         generatePassword();
-        // document.getElementById('passwordOutput').innerText = `Generated Password: ${password}`;
         count++;
 
         if (count >= maxCount) {
